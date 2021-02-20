@@ -1,7 +1,7 @@
 %% The IDP code is shared by the authors of Interlayer link prediction in multiplex social networks: An iterative degree penalty algorithm. 
 function [output_args] = Mul_Func_IDP(filename_lay1,filename_lay2,filename_lay1_2_rela,theknown_rate,krIntval,repetitiontimes,thre)%krIntval is the real interval rate
 %function [output_args] = Mul_Func_IDP(filename_lay1,filename_lay2,filename_lay1_2_rela,theknown_rate,krIntval,repetitiontimes,thre,eps)%krIntval is the real interval rate
-% SOIDP 20210212
+%IDP 20210212
 %filename_lay1,filename_lay2,filename_lay1_2_rela:Two-layer network data and interlayer data
 %theknown_rate:Training set ratio (0.05:0.05:0.5)
 %krIntval:Training set interval (0.05)
@@ -45,7 +45,7 @@ lay1_2_relation1=lay1_2_relation;
 lay1_degree(:,2)=lay1_degree(:,2)+1;
 lay2_degree(:,2)=lay2_degree(:,2)+1;
 
-%Repeat 10 times to label train and probe sets£¬storing recall and precision 
+%Repeat 10 times to label train and probe setsÂ£Â¬storing recall and precision 
 recall=zeros(theknown_rate(1,size(theknown_rate,2))/krIntval,repetitiontimes);
 precision=zeros(theknown_rate(1,size(theknown_rate,2))/krIntval,repetitiontimes); 
 edges_num=zeros(theknown_rate(1,size(theknown_rate,2))/krIntval,repetitiontimes);
