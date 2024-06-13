@@ -11,7 +11,7 @@ If you use this code in your own work, please cite our work:
   pages={997-1007},
   doi={10.1109/TCSS.2021.3068468}},
   publisher={IEEE}
-
+}
 @article{ding2024user,
   title={User identification across multiple social networks based on naive Bayes model},
   author={Ding, Xiao and Zhang, Haifeng and Ma, Chuang and Zhang, Xingyi and Zhong, Kai},
